@@ -289,7 +289,7 @@ const manageRelations = async (newData, uid, oldVersionId, model) => {
               if (!connects[parent]) {
                 connects[parent] = [
                   {
-                    ...newData[parent][i],
+                    ...newData[parent],
                     ..._.pickBy(previousVersion[parent][i]),
                   },
                 ];
